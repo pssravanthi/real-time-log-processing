@@ -9,12 +9,12 @@ This project implements a **real-time log processing pipeline** using **Kafka, S
 - **Monitoring** via Prometheus & Grafana.
 
 ## Tech Stack
-- **Apache Kafka** → Log streaming.
-- **Apache Spark** → Real-time processing.
-- **FastAPI** → REST API for log retrieval.
-- **Snowflake** → Cloud data storage.
-- **Docker & Kubernetes** → Containerized deployment.
-- **Prometheus & Grafana** → Monitoring & visualization.
+- **Apache Kafka** - Log streaming.
+- **Apache Spark** - Real-time processing.
+- **FastAPI** - REST API for log retrieval.
+- **Snowflake** - Cloud data storage.
+- **Docker & Kubernetes** - Containerized deployment.
+- **Prometheus & Grafana** - Monitoring & visualization.
 
 ## How to Run
 
@@ -35,7 +35,7 @@ docker run -p 9090:9090 -v $(pwd)/prometheus.yml:/etc/prometheus/prometheus.yml 
 docker run -p 3000:3000 grafana/grafana
 
 ## API Endpoints
-- `GET /logs` -> Fetch latest processed logs.
+- GET /logs -> Fetch latest processed logs.
 
 ## Deployment
 For production, deploy using **Docker Compose** or **Kubernetes**:
