@@ -19,9 +19,7 @@ This project implements a **real-time log processing pipeline** using **Kafka, S
 ## How to Run
 
 ### 1️. Start Kafka & Zookeeper
-```bash
 docker-compose up -d
-```
 
 ### 2️. Run Log Producer (Generates Logs)
 python log_producer.py
