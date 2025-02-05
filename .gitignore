@@ -1,0 +1,22 @@
+# Python dependencies
+venv/
+__pycache__/
+
+# Logs
+*.log
+
+# Docker
+*.dockerignore
+
+# Kubernetes
+*.yaml
+
+# Environment variables
+.env
+
+# Snowflake credentials
+config/snowflake_creds.json
+
+# IDE config files
+.vscode/
+.idea/

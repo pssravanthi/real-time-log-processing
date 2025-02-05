@@ -1,0 +1,7 @@
+{
+  "dashboard": {
+    "panels": [
+      { "title": "Kafka Log Events", "type": "graph", "targets": [{ "expr": "kafka_logs_count" }] }
+    ]
+  }
+}
