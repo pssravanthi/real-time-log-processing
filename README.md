@@ -24,38 +24,26 @@ docker-compose up -d
 ```
 
 ### 2️. Run Log Producer (Generates Logs)
-```bash
 python log_producer.py
-```
 
 ### 3️. Run Spark Processing (Detects Anomalies)
-```bash
 python log_processor.py
-```
 
 ### 4️. Run API (Exposes Processed Logs)
-```bash
 uvicorn log_api:app --reload
-```
 
 ### 5️. Run Monitoring Services
-```bash
 docker run -p 9090:9090 -v $(pwd)/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus
 docker run -p 3000:3000 grafana/grafana
-```
 
 ## API Endpoints
 - `GET /logs` -> Fetch latest processed logs.
 
 ## Deployment
 For production, deploy using **Docker Compose** or **Kubernetes**:
-```bash
 docker-compose up -d
-```
 OR
-```bash
 kubectl apply -f deployment.yaml
-```
 
 ## Monitoring with Grafana
 - Open **http://localhost:3000** (Grafana UI)
