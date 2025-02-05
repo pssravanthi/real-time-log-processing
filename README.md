@@ -31,8 +31,8 @@ python log_processor.py
 uvicorn log_api:app --reload
 
 ### 5️. Run Monitoring Services
-docker run -p 9090:9090 -v $(pwd)/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus
-docker run -p 3000:3000 grafana/grafana
+`docker run -p 9090:9090 -v $(pwd)/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus`
+`docker run -p 3000:3000 grafana/grafana`
 
 ## API Endpoints
 - GET /logs -> Fetch latest processed logs.
